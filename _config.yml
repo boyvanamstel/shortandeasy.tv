@@ -22,6 +22,7 @@ permalink: /news/:title
 url: "https://www.shortandeasy.tv" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: shortandeasytv 
 #github_username: boyvanamstel 
+google_analytics: UA-7720147-32
 
 # Build settings
 markdown: kramdown

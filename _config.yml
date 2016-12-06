@@ -1,56 +1,62 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Short & Easy
-#email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Basically gaming after turning 30. Join me on my quest for games that are short and easy to play.
-baseurl: "" # the subpath of your site, e.g. /blog
-permalink: /news/:title
-url: "https://www.shortandeasy.tv" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: shortandeasytv 
-#github_username: boyvanamstel 
-google_analytics: UA-7720147-32
-
 # Build settings
-markdown: kramdown
-#theme: minima
 gems:
-  - jekyll-feed
-  - jekyll-assets
-  - octopress-minify-html
+  - jemoji
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
   - deploy.sh
 
-# jekyll-assets
-assets:
-  prefix: "/assets"
-  digest: true
-  autoprefixer:
-    browsers:
-      - "last 2 versions"
-      - "IE > 9"
-  sources:
-    - _assets/css
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/fonts
-    - _assets/img
-    - _assets/js
-  features:
-    automatic_img_size: false
+# Site settings
+title: "Short & Easy"
+description: > # this means to ignore newlines until "email:"
+  Basically gaming after turning 30. Join me on YouTube for my quest for games that are short and easy to play.
+#email: a-mail@mail.mail
+#blog logo
+logo: "/assets/images/channel-icon_trans.png"
+# blog cover
+cover: "/assets/images/channel-art_clean.jpg"
+
+name: 'Short & Easy'
+author: 'Boy van Amstel'
+author_image: "/assets/images/author.jpg"
+
+paginate: 5
+
+url: "https://www.shortandeasy.tv" # the base hostname & protocol for your site
+permalink: /news/:title
+google_analytics: UA-7720147-32
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@shortandeasytv'
+
+#fill in disqus shortname to use disqus
+#disqus: disqus-shortname
+
+# social icons and sharing options
+social:
+  - icon:       twitter	
+    url:	"https://www.twitter.com/shortandeasytv"
+  - icon:	youtube
+    url:	"https://www.youtube.com/channel/UC2cCFAEBJJHg24QI9xVKQYA"
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+#  - icon:	github
+#    url:	https://github.com/dirkfabisch
+#    desc:	Fork me on github
+#    share_url:
+#    share_title:
+#    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:

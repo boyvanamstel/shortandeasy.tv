@@ -39,6 +39,8 @@ social:
     url:	"https://www.twitter.com/shortandeasytv"
   - icon:	youtube
     url:	"https://www.youtube.com/channel/UC2cCFAEBJJHg24QI9xVKQYA"
+  - icon:       twitch	
+    url:	"https://www.twitch.tv/shortandeasytv"
 
 #  - icon:	facebook
 #    url:	https://facebook.com/???

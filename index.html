@@ -20,7 +20,6 @@ layout: default
             <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
               <i class="fa fa-{{ social.icon }}"></i>
             </a>
-            <!-- &nbsp;&nbsp;·&nbsp;&nbsp; -->
         {% endif %}
       {% endfor %}
     </div>
@@ -44,7 +43,6 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
         </article>
@@ -66,7 +64,6 @@ layout: default
             </section>
             <div class="post-meta">
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
         </article>
@@ -86,9 +83,5 @@ layout: default
         {% endif %}
       {% endif %}
     </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
 
 </main>
